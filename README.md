@@ -1,7 +1,17 @@
-# Wraith Pipeline - Live Flight Ingest
+# 👻 Wraith Pipeline - Live Flight Ingest
 
-Pipeline de dados em tempo real rodando no Termux Android.
-- Fonte: FlightRadar24 feed.js (244 voos BR / 14711 global)
-- Storage: SQLite projeto_wraith.db tabela voos_fr24
-- Stack: Python 3.14 + Requests + SQLite + Spark Ready
-- Device: 512MB RAM - Termux
+> Real-time aviation data pipeline built on Android / Termux
+> First run: 244 BR flights / 14711 global
+
+Built for Mercado Libre case - from ingestion to storage on mobile.
+
+### Stack
+- Python 3.11 + OpenSky API
+- SQLite + CSV
+- Termux + Git
+
+### Run
+pip install requests
+python ingest.py
+
+Built by @SrGhost00 - Jaboticabal, SP
